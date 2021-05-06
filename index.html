@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Admission</title>
+</head>
+<body>
+    <div align=center>
+        <img src="img/logo.png" alt="Logo" id="logo">
+    </div>
+    <div class="container">
+        <form action="\">
+            <div class="banner" align=center>
+                <h1>Admission Form</h1>
+            </div>
+            <div class="prsnl">
+                <div class="item">
+                    <label for="fname"> First Name<span>*</span></label>
+                    <input type="text" class="inpt" id="fname" name="fname" required>
+                </div>
+                <div class="item">
+                    <label for="lname"> Last Name<span>*</span></label>
+                    <input type="text" class="inpt" id="lname" name="lname" required>
+                </div>
+                <div class="item">
+                    <label for="dob"> Date of Birth<span>*</span></label> 
+                    <input type="date" class="inpt" id="dob" name="dob" required>
+                </div>
+                <div class="item">
+                    <label for="gender">Gender<span>*</span></label>
+                    <div>
+                        <input type="radio" id="Male" name="gender">
+                        <label for="Male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender">
+                        <label for="Female">Female</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <label for="nationality">Nationality<span>*</span></label>
+                    <input type="text" class="inpt" name="nationality" id="nationality">
+                </div>
+                <div class="item">
+                    <label for="mobile">Mobile Number<span>*</span></label><br>
+                    <input type="text" value="+91" maxlength="4" id="noAdd91">
+                    <input type="tel" id="mobile" maxlength="10" >
+                </div>
+                <div class="item">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" class="inpt" name="email" id="email" placeholder="xyz@gmail.com">
+                </div>
+            </div>
+
+            <!-- Parents Details -->
+            <div class="family">
+                <div class="item">
+                    <label for="fathername"> Father's Name<span>*</span></label>
+                    <input type="text" class="inpt" id="fathername" name="fathername">
+                </div>
+                <div class="item">
+                    <label for="mothername"> Mother's Name<span>*</span></label>
+                    <input type="text" class="inpt" id="mothername" name="mothername">
+                </div>
+            </div>
+
+            <!-- Academic Details -->
+            <div class="academic">
+                <div class="item">
+                    Marks obtained in 12th(in %)<span>*</span> <input type="number" class="inpt" name="" id="">
+                </div>
+                <div class="item">
+                    Upload Certificate<span>*</span> <input type="file" class="inpt" id="mobile" name="" id="">
+                </div>
+                <div class="item">
+                    <p>
+                        In which Stream do you want to take Admission.
+                    </p>
+                    Select Your Stream<span>*</span>
+                    <select id="SelectClass">
+                        <option value="">B.C.A</option>
+                        <option value="">B.B.A</option>
+                        <option value="">B.Arts</option>
+                        <option value="">B.Com</option>
+                        <option value="">B.Sc</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Declaration</h2>
+                <hr>
+                
+                <p class="declaration"><input type="checkbox" name="checkbox1" class="chkbox" required checked>I do hereby declare that all the documents uploaded by me are original to the best of my knowledge. If any discrepancy is found in my E-form at any stage, college has full authority to cancel my admission.</p>
+            </div>
+            <div class="item" align="center">
+                <button type="submit" id="btn" href="/">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
