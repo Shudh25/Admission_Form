@@ -22,6 +22,12 @@ form {
     width: 80%;
     margin: 20px auto;
 }
+#logo{
+    width: 33%;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
 .item{
     margin: 20px 0px;
 }
@@ -89,10 +95,4 @@ span{
 }
 #btn:hover{
     background-color: #1015b1;
-}
-#logo{
-    width: 33%;
-    background-color: white;
-    border: 1px solid grey;
-    border-radius: 15px;
 }
